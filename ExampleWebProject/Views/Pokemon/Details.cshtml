@@ -1,0 +1,11 @@
+﻿@model ExampleWebProject.Models.PokemonDetail
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-transform: capitalize;">@Model.Name</h2>
+<h4>ID: @Model.Id</h4>
+<h4>Height: @(Model.Height)m</h4>
+<h4>Weight: @(Model.Weight)kg</h4>
+<img src="@Model.Sprites.Front_Default" height="100" />
